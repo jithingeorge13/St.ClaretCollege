@@ -36,7 +36,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1"
+                android:layout_weight="0.8"
                 android:background="#fff"
                 android:orientation="vertical">
 
@@ -54,21 +54,23 @@
 
             </LinearLayout>
 
+
+
+
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:background="@drawable/custom"
                     android:layout_marginBottom="2dp">
+                    <WebView
+                        android:id="@+id/Webview"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
 
-                    <TextView
-                        android:id="@+id/textview1"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="Announcements!!!!!"
-                        android:textColor="#404040"
-                        android:textSize="23sp" />
+                        android:orientation="vertical"/>
+
                 </LinearLayout>
 
 
