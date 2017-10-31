@@ -52,7 +52,7 @@
                 android:orientation="vertical">
 
                 <EditText
-                    android:id="@+id/editText2"
+                    android:id="@+id/userid"
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -69,7 +69,7 @@
                     android:textSize="20sp" />
 
                 <EditText
-                    android:id="@+id/editText3"
+                    android:id="@+id/password"
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -87,18 +87,17 @@
                     android:textSize="20sp" />
 
 
-
-
-            <Button
-                android:id="@+id/button"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:background="#303080"
-                android:scaleType="center"
-                android:text="Log In"
-                android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                android:textColor="#fff" />
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#303080"
+                    android:onClick="loginclick"
+                    android:scaleType="center"
+                    android:text="Log In"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="#fff" />
 
 
 
