@@ -20,7 +20,7 @@
         android:columnWidth="110dp"
         android:stretchMode="columnWidth"
         android:background="@drawable/custom"
-         android:verticalSpacing="10dp"
+        android:verticalSpacing="10dp"
         android:horizontalSpacing="10dp"
         android:paddingTop="5dp"
         android:paddingBottom="5dp">

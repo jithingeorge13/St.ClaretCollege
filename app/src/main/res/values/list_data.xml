@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+
+    <string-array name="courses">
+        <item>Bachelor of Commerce (B. COM) Regular</item>
+        <item>Bachelor of Commerce (B.COM) Travel and Tourism (Vocational)</item>
+        <item>Bachelor of Commerce [B.Com (Travel and Tourism with Aviation)</item>
+        <item>BBA (Bachelor of Business Administration)</item>
+        <item>Bachelor of Business Administration [BBA with Aviation]</item>
+        <item>Bachelor of Computer Applications (B.C.A)</item>
+        <item>B.A(J,P and E)</item>
+        <item>B.A[E P Eng]</item>
+        <item>Bachelor of Arts [BA] (Economics, Pol. Science and Comp. Science)[EPCS]</item>
+        <item>Bachelor of Arts [BA] (Economics, Pol. Science and Comp. Science)[EPCS]</item>
+        <item>Master of Commerce [M.Com]</item>
+        <item>Master of Business Administration [MBA]</item>
+    </string-array>
+</resources>

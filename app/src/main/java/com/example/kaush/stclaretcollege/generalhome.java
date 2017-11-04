@@ -2,6 +2,8 @@ package com.example.kaush.stclaretcollege;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MotionEvent;
+import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
@@ -12,11 +14,19 @@ public class generalhome extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_generalhome);
 
+
         String url = "http://www.claretcollege.edu.in/Principals-message/";
         WebView view=(WebView) this.findViewById(R.id.Webview);
         view.getSettings().setDomStorageEnabled(true);
         view.getSettings().setJavaScriptEnabled(true);
 
+
+        view.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                return true;
+            }
+        });
         view.loadUrl(url);
         view.setWebViewClient(new WebViewClient() {
             @Override

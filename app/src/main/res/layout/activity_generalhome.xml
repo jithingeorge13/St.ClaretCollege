@@ -19,18 +19,36 @@
             android:orientation="vertical">
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="fill_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:background="#fff"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
+            <ViewFlipper
+                android:id="@+id/view_flipper"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:autoStart="true"
+                android:flipInterval="1500">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/claretimg" />
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_margin="2dp"
-                    android:src="@drawable/claretimg" />
+                    android:src="@drawable/pic1" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/pic2" />
+
+            </ViewFlipper>
             </LinearLayout>
 
             <LinearLayout
@@ -53,9 +71,6 @@
                     android:textSize="15sp" />
 
             </LinearLayout>
-
-
-
 
 
                 <LinearLayout
@@ -85,7 +100,7 @@
                    android:layout_weight="1"
                    android:layout_margin="2dp"
                    android:background="#303080"
-                   android:text="About"
+                   android:text="Academics"
                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
                    android:textColor="#fff" />
                <Button
@@ -120,7 +135,7 @@
                     android:layout_margin="2dp"
                     android:layout_weight="1"
                     android:background="#FF4500"
-                    android:text="Alumini"
+                    android:text="Website"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
                     android:textColor="#fff" />
 

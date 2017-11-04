@@ -23,7 +23,7 @@ public class login extends AppCompatActivity {
     }
 
     public void butclick(View view) {
-        Intent intent = new Intent(login.this,generalhome.class);
+        Intent intent = new Intent(login.this,academics.class);
         startActivity(intent);
     }
 
