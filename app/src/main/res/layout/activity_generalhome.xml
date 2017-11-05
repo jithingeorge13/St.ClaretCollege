@@ -22,8 +22,10 @@
                 android:layout_width="fill_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:background="#fff"
-                android:orientation="horizontal">
+                android:background="@drawable/custom1"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="2dp">
 
             <ViewFlipper
                 android:id="@+id/view_flipper"
@@ -38,13 +40,13 @@
                     android:layout_gravity="center"
                     android:src="@drawable/claretimg" />
                 <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
                     android:layout_gravity="center"
                     android:src="@drawable/pic1" />
                 <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
                     android:layout_gravity="center"
                     android:src="@drawable/pic2" />
 
@@ -55,8 +57,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="0.8"
-                android:background="#fff"
+                android:background="@drawable/custom"
+                android:layout_marginBottom="5dp"
                 android:orientation="vertical">
+
 
                 <TextView
                     android:id="@+id/myAwesomeTextView"
@@ -73,21 +77,28 @@
             </LinearLayout>
 
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/custom"
-                    android:layout_marginBottom="2dp">
-                    <WebView
-                        android:id="@+id/Webview"
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp">
+                <ProgressBar
+                    android:id="@+id/progressBar2"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_x="162dp"
+                    android:layout_y="51dp" />
 
-                        android:orientation="vertical"/>
+                <WebView
+                    android:id="@+id/Webview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"></WebView>
 
-                </LinearLayout>
 
+            </FrameLayout>
 
            <LinearLayout
                android:layout_width="match_parent"
@@ -104,16 +115,18 @@
                    android:text="Academics"
                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
                    android:textColor="#fff" />
+
                <Button
-                   android:id="@+id/button3"
+                   android:id="@+id/admission"
                    android:layout_width="0dp"
                    android:layout_height="wrap_content"
-                   android:layout_weight="1"
                    android:layout_margin="2dp"
+                   android:layout_weight="1"
                    android:background="#006400"
+                   android:onClick="admission"
                    android:text="Admissions"
                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                   android:textColor="#fff"/>
+                   android:textColor="#fff" />
            </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
