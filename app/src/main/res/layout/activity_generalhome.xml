@@ -30,7 +30,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:autoStart="true"
-                android:flipInterval="1500">
+                android:flipInterval="1800">
 
                 <ImageView
                     android:layout_width="fill_parent"
@@ -94,12 +94,13 @@
                android:layout_height="wrap_content">
 
                <Button
-                   android:id="@+id/button4"
+                   android:id="@+id/Academics"
                    android:layout_width="0dp"
                    android:layout_height="wrap_content"
-                   android:layout_weight="1"
                    android:layout_margin="2dp"
+                   android:layout_weight="1"
                    android:background="#303080"
+                   android:onClick="academics"
                    android:text="Academics"
                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
                    android:textColor="#fff" />

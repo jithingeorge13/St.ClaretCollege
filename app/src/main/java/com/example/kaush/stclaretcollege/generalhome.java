@@ -1,5 +1,6 @@
 package com.example.kaush.stclaretcollege;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MotionEvent;
@@ -13,6 +14,8 @@ public class generalhome extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_generalhome);
+
+
 
 
         String url = "http://www.claretcollege.edu.in/Principals-message/";
@@ -56,5 +59,9 @@ public class generalhome extends AppCompatActivity {
             }
         });
 
+    }
+    public void academics(View view) {
+        Intent intent = new Intent(generalhome.this,academics.class);
+        startActivity(intent);
     }
 }
