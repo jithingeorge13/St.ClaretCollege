@@ -131,25 +131,28 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <Button
-                    android:id="@+id/button1"
+                    android:id="@+id/gallery"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:layout_margin="2dp"
+                    android:layout_weight="1"
                     android:background="#800000"
+                    android:onClick="gallery"
                     android:text="Gallery"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
                     android:textColor="#fff" />
 
                 <Button
-                    android:id="@+id/button2"
+                    android:id="@+id/website"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="2dp"
                     android:layout_weight="1"
                     android:background="#FF4500"
-                    android:text="Website"
+                    android:onClick="website"
+                    android:text="Contact Us"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
                     android:textColor="#fff" />
 

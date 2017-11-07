@@ -37,9 +37,10 @@
         <activity
             android:name=".academics"
             android:label="Courses"
-            android:screenOrientation="portrait"></activity>
-        <activity android:name=".admissions"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".admissions"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

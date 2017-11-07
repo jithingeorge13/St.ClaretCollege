@@ -1,6 +1,7 @@
 package com.example.kaush.stclaretcollege;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MotionEvent;
@@ -21,7 +22,7 @@ public class generalhome extends AppCompatActivity {
 
 
         String url = "http://www.claretcollege.edu.in/Principals-message/ ";
-        WebView view=(WebView) this.findViewById(R.id.Webview);
+        WebView view = (WebView) this.findViewById(R.id.Webview);
         view.getSettings().setDomStorageEnabled(true);
         view.getSettings().setJavaScriptEnabled(true);
 
@@ -38,8 +39,7 @@ public class generalhome extends AppCompatActivity {
 
         view.setWebViewClient(new WebViewClient() {
             @Override
-            public void onPageFinished(WebView view, String url)
-            {
+            public void onPageFinished(WebView view, String url) {
                 view.loadUrl("javascript:(function() { " +
                         "document.getElementsByTagName('header')[0].style.display='none'; " +
                         "document.getElementsByTagName('nav')[0].style.display='none'; " +
@@ -48,12 +48,12 @@ public class generalhome extends AppCompatActivity {
                         "document.getElementsByClassName('block block-views clearfix')[0].style.height='200px'; " +
                         "document.getElementsByClassName('block block-block clearfix')[0].style.display='none'; " +
                         "document.getElementsByTagName('footer')[0].style.display='none'; " +
-                        "document.getElementsByTagName('body')[0].style.margin='0px';"+
-                        "document.getElementsByTagName('body')[0].style.padding='0px';"+
-                        "document.getElementsByTagName('aside')[0].style.margin='0px';"+
-                        "document.getElementsByTagName('aside')[0].style.padding='0px';"+
-                        "document.getElementById('block-views-event-calendar-block-1').style.margin='0px';"+
-                        "document.getElementById('block-views-event-calendar-block-1').style.height='190px';"+
+                        "document.getElementsByTagName('body')[0].style.margin='0px';" +
+                        "document.getElementsByTagName('body')[0].style.padding='0px';" +
+                        "document.getElementsByTagName('aside')[0].style.margin='0px';" +
+                        "document.getElementsByTagName('aside')[0].style.padding='0px';" +
+                        "document.getElementById('block-views-event-calendar-block-1').style.margin='0px';" +
+                        "document.getElementById('block-views-event-calendar-block-1').style.height='190px';" +
                         "})()");
                 view.setVisibility(View.VISIBLE);
                 progressBar.setVisibility(View.INVISIBLE);
@@ -63,11 +63,28 @@ public class generalhome extends AppCompatActivity {
     }
 
     public void academics(View view) {
-        Intent intent = new Intent(generalhome.this,academics.class);
+        Intent intent = new Intent(generalhome.this, academics.class);
         startActivity(intent);
     }
+
     public void admission(View view) {
-        Intent intent = new Intent(generalhome.this,admissions.class);
+        Intent intent = new Intent(generalhome.this, admissions.class);
         startActivity(intent);
     }
+
+//    public void gallery(View view) {
+//        Intent intent = new Intent(generalhome.this, gallery.class);
+//        startActivity(intent);
+//    }
+//
+//    public void website(View view) {
+//        Intent intent = new Intent(generalhome.this, contact.class);
+//        startActivity(intent);
+//    }
+
+//    public void website(View view) {
+//        Intent i = new Intent(Intent.ACTION_VIEW,
+//                Uri.parse("http://www.claretcollege.edu.in/"));
+//        startActivity(i);
+//    }
 }
